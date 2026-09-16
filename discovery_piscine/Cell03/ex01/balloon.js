@@ -9,8 +9,7 @@ const colors = ['red', 'green', 'blue'];
 let colorIndex = 0;
 let size = MIN_SIZE;
 
-function changeBalloon
-() {
+function changeBalloon() {
     balloon.style.width = size + 'px';
     balloon.style.height = size + 'px';
     balloon.style.backgroundColor = colors[colorIndex];
@@ -23,8 +22,7 @@ balloon.addEventListener('click', () => {
     if (size > MAX_SIZE) {
         size = MIN_SIZE;
         colorIndex = 0;
-        changeBalloon
-        ();
+        changeBalloon();
         return;
     }
 
