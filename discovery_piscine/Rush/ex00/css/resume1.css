@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     transition: 0.3s ;
-    
+    scroll-behavior: smooth;
 }
 
 body {
@@ -172,38 +172,42 @@ main {
     padding: 5px 20%;
     display: flex;
     flex-direction: column;
-    gap:50px
+    gap:80px
 }
 
 .skilltopic {
-    
+    text-shadow: 0px 0px 5px #a0d2eb;
+    font-weight: 800;
     font-size: 4vh;
     text-align: right;
 }
 
 .exptopic {
+    text-shadow: 0px 0px 5px #d0bdf4;
     font-size: 4vh;
+    font-weight: 800;
 }
 
 .skillcell {
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap:30px
 }
 
 .expcell {
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap:30px
 }
 
 .skilltext {
-    
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     font-size: 2vh;
 }
 
 
 .exp {
+    
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
@@ -214,9 +218,10 @@ main {
     
 }
 
+
 .exp i{
     font-size: 5vh;
-    
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -270,6 +275,7 @@ main {
 
 .cardcon a {
     text-decoration: none;
+    color: #5dbceb;
 }
 
 .cardcon i {
@@ -300,4 +306,55 @@ hr {
     main {
         padding: 20px 15%;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .logo h1{
+        font-size: 1vh;
+    }
+
+    .logotext {
+        font-size: 1vh;
+        gap: 10px;
+    }
+    .logotext a{
+        font-size: 1vh;
+    }
+
+    .logotext a button{
+        font-size: 1vh;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .profilename {
+        gap: 100px;
+    }
+
+    .profile .name {
+        font-size: 3vh;
+    }
+
+    main {
+        padding: 10px 15%;
+    }
+
+    .skilltopic {
+        text-align: center;
+    }
+
+
+    .exptopic {
+        text-align: center;
+    }
+
+
 }

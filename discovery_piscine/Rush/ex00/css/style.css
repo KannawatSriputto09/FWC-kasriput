@@ -20,6 +20,7 @@ body {
 
 .card h1 {
     padding: 10px;
+    font-size: 5vh;
     font-weight: 800;
 
 }
@@ -27,21 +28,30 @@ body {
 .card button{
     margin-left: 5px;
     margin-right: 5px;
-    padding: 10px;
+    font-size: 1.8vh;
+    padding: 15px 25px;
     border: none;
-    background-color: rgb(39, 39, 109);
+    background-color: #d0bdf4;
     color: white;
     border-radius: 10px;
     cursor: pointer;
 }
 
+
+
 .card button:hover{
-    padding: 13px;
+    font-size: 2vh;
+    padding: 18px 28px;
     border: none;
-    background-color: rgb(65, 65, 172);
+    background-color: #a0d2eb;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 10px;
-    font-size: 1.5vh;
     /* outline: 3px solid rgb(201, 201, 201);
     outline-offset: 2px; */
+}
+
+.text {
+    color: grey;
+    padding-bottom: 10px;
 }
